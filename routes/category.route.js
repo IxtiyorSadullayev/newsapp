@@ -2,9 +2,9 @@ const { CreateCategory, GetAllCategory, UpdateCategory, DeleteCategory } = requi
 
 const router = require('express').Router()
 
-router.post('/category', CreateCategory)
-router.get('/category', GetAllCategory)
-router.patch('/category/:id', UpdateCategory)
-router.delete('/category/:id', DeleteCategory)
+router.post('/', CreateCategory)
+router.get('/', GetAllCategory)
+router.patch('/:id', UpdateCategory)
+router.delete('/:id', DeleteCategory)
 
 module.exports = router;

@@ -20,7 +20,7 @@ connectDB()
 // routes
 
 app.use('/user', require('./routes/user'))
-
+app.use('/category', require('./routes/category.route'))
 // error routes
 app.use(async(req, res, next) =>{
     try {
